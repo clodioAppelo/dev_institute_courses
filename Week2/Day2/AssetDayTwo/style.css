@@ -1,0 +1,71 @@
+body {
+  background: url(worldmap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: x-small;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.card {
+  border: solid black 1px;
+}
+
+.containerA {
+  background-color: red;
+  height: 100px;
+  padding-bottom: 20px;
+  position: static;
+}
+.containerB {
+  background-color: greenyellow;
+  height: 100px;
+  padding-bottom: 20px;
+  position: static;
+}
+.containerC {
+  background-color: yellow;
+  height: 100px;
+  padding-bottom: 20px;
+  position: static;
+}
+.grid-itemA {
+  text-align: center;
+}
+.topText {
+  height: 100px;
+}
+.topText1 {
+  margin-bottom: 100px;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 450px) {
+  .grid-container {
+    display: block;
+    width: 50%;
+  }
+}

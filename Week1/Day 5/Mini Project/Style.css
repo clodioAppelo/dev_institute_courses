@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e6bb6a;
+}
+
+li {
+  float: right;
+}
+nav img {
+  float: left;
+  height: 60px;
+  width: 50px;
+  background-color: #e6bb6a;
+}
+
+nav li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  background-color: #e6bb6a;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+li a:hover {
+  background-color: #e6bb6a;
+}
+
+main {
+  background-image: url("Tools.jpg");
+  background-repeat: repeat;
+  background-size: 400px;
+  height: 600px;
+}
+
+h1 {
+  color: #e6bb6a;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 14rem;
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+footer {
+  margin: 2rem 0;
+  float: left;
+  width: 100%;
+  font-size: xx-small;
+}

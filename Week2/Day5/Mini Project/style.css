@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Raleway";
+}
+
+body {
+  background-image: url("./images/headerback.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+}
+
+h1 {
+  padding-top: 150px;
+  color: #ffc105;
+}
+h1,
+h5 {
+  text-align: center;
+}
+
+header {
+  margin-bottom: 3rem;
+}
+.about {
+  background-color: white;
+  text-align: center;
+  color: #ffc007;
+}
+.col > img {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+.claudio {
+  font-size: medium;
+}
+p {
+  font-size: small;
+}
+
+.portfolio,
+.blog {
+  text-align: center;
+  background-color: white;
+  color: #ffc007;
+  padding-top: 4rem;
+}
+
+.col-3 > img {
+  height: 225px;
+  width: 225px;
+}
+
+.col-3 > .card {
+  margin: 2rem;
+}
+
+footer {
+  color: #ffc007;
+  background-color: white;
+  text-align: center;
+}

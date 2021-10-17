@@ -1,0 +1,30 @@
+body {
+  background-image: url("https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: azure;
+  margin: auto;
+  width: fit-content;
+  padding-top: 8rem;
+}
+
+#email {
+  border-radius: 5px;
+  display: inline-block;
+  padding-left: 30rem;
+  padding-top: 10rem;
+}
+
+#submit {
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: blue;
+  border-style: none;
+  display: inline-block;
+}
