@@ -2,7 +2,7 @@
 After guessing the outcome check the results of the code below.
 Check them by copying line by line and running them in the console.*/
  
-                       //My Guess
+                       //My Guesses
 console.log(5 + "34")  // '534'
 console.log(5 - "4") // '1'
 console.log(10 % 5) // 0
