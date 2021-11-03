@@ -1,10 +1,17 @@
-let todisplay = ``
-	let longest = array.reduce((a, b)=>{
-			return a.length > b.length ? a.length : b.length;
+
+		function frame(str){
+			let lines = str.split('\n')
+			// get length of longest line:
+			let max_length = Math.max(...lines.map(l => l.length))
+			let border = '*'.repeat(max_length + 4)
+		
+			let ret =  border + "\n"
+			// make inner lines padded to length:
+			ret += lines.reduce((s,l) => s+=`* ${l.padEnd(max_length)} *\n`, "")
+			ret += border
+			return ret
 		}
-	);
-	while (todisplay.length<longest+5) {todisplay+="*"}
-	todisplay+='\n';
-	for (let index = 0; index < array.length; index++) {
-		let toadd = ""
-		toadd+='
+		
+		console.log(frame('Hello world in a frame'))
+		// console.log(frame('A longer string with more words'))
+		// console.log(frame('A longer string with more words\nand more lines\nwrapped into a nice box.'))
