@@ -25,5 +25,11 @@ while i < len(user):
     i += 1
     print(user[0:i])
 
+import random
+
+str_var = list(user)
+random.shuffle(str_var)
+print(''.join(str_var))
+
 
 
