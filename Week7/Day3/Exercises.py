@@ -77,96 +77,96 @@
 
 # --------------------------------------------------------------------------------------------------
 
-import random
+# import random
 
 
-def print_models(unprinted_designs, completed_models):
-    """    
-    Simulate printing each design until none are left.    
-    Move each design to completed_models after printing.    
-    """
+# def print_models(unprinted_designs, completed_models):
+#     """
+#     Simulate printing each design until none are left.
+#     Move each design to completed_models after printing.
+#     """
 
-    while unprinted_designs:
-        current_design = unprinted_designs.pop()
+#     while unprinted_designs:
+#         current_design = unprinted_designs.pop()
 
-        # Simulate creating a 3D print from the design.
-        print("Printing model: " + current_design)
-        completed_models.append(current_design)
-
-
-def show_completed_models(completed_models):
-    """
-    Show all the models that were printed.
-    """
-    print("\nThe following models have been printed:")
-    for completed_model in completed_models:
-        print(completed_model)
+#         # Simulate creating a 3D print from the design.
+#         print("Printing model: " + current_design)
+#         completed_models.append(current_design)
 
 
-global_scope_design_list = ['iphone case', 'robot pendant', 'dodecahedron']
-completed_models = []
-
-print_models(global_scope_design_list, completed_models)
-print(global_scope_design_list)
-show_completed_models(completed_models)
-
-'''
-    Write a function called display_message() that prints one sentence telling everyone what you are learning in this course.
-    Call the function, and make sure the message displays correctly.
-'''
+# def show_completed_models(completed_models):
+#     """
+#     Show all the models that were printed.
+#     """
+#     print("\nThe following models have been printed:")
+#     for completed_model in completed_models:
+#         print(completed_model)
 
 
-def display_message():
-    '''this function says what i do in this course'''
-    print('im learning python & web dev')
+# global_scope_design_list = ['iphone case', 'robot pendant', 'dodecahedron']
+# completed_models = []
+
+# print_models(global_scope_design_list, completed_models)
+# print(global_scope_design_list)
+# show_completed_models(completed_models)
+
+# '''
+#     Write a function called display_message() that prints one sentence telling everyone what you are learning in this course.
+#     Call the function, and make sure the message displays correctly.
+# '''
 
 
-display_message()
+# def display_message():
+# '''this function says what i do in this course'''
+# print('im learning python & web dev')
 
 
-'''Create a function that accepts a number between 1 and 
-100 and generates another number randomly between 1 and 100.
-Compare the two numbers, if it's the same number, 
-display a success message, otherwise show a fail message and display both numbers.'''
+# display_message()
 
 
-def hit_or_miss(user_num):
-
-    computer_num = random.randint(0, 100)
-
-    try:
-        user_num = int(user_num)
-        2/0
-    except ZeroDivisionError:
-        print('you probably want to use a number, because you dodnt we\'re using the number 10')
-        user_num = 10
-
-    if computer_num > user_num:
-        print('success, you guessed correctly')
-    else:
-        print(f'you guessed {user_num}, the correct choice is: {computer_num}')
+# '''Create a function that accepts a number between 1 and
+# 100 and generates another number randomly between 1 and 100.
+# Compare the two numbers, if it's the same number,
+# display a success message, otherwise show a fail message and display both numbers.'''
 
 
-hit_or_miss('45')
-hit_or_miss('23')
-hit_or_miss('8')
-hit_or_miss('hello')
+# def hit_or_miss(user_num):
+
+#     computer_num = random.randint(0, 100)
+
+#     try:
+#         user_num = int(user_num)
+#         2/0
+#     except ZeroDivisionError:
+#         print('you probably want to use a number, because you dodnt we\'re using the number 10')
+#         user_num = 10
+
+#     if computer_num > user_num:
+#         print('success, you guessed correctly')
+#     else:
+#         print(f'you guessed {user_num}, the correct choice is: {computer_num}')
 
 
-strings = ['hello', 'world', 'age']
+# hit_or_miss('45')
+# hit_or_miss('23')
+# hit_or_miss('8')
+# hit_or_miss('hello')
 
-my_dict = {
-    'first_name': 'john',
-    'last_name': 'cooper',
-    'age': 23
-}
 
-for string in strings:
-    try:
-        print(my_dict[string])
+# strings = ['hello', 'world', 'age']
 
-    except KeyError:
-        print('that key wasnt found')
+# my_dict = {
+#     'first_name': 'john',
+#     'last_name': 'cooper',
+#     'age': 23
+# }
 
-    except ValueError:
-        pass
+# for string in strings:
+#     try:
+#         print(my_dict[string])
+
+#     except KeyError:
+#         print('that key wasnt found')
+
+#     except ValueError:
+#         pass
