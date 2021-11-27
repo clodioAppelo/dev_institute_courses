@@ -51,10 +51,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1637782613413">
+    <state x="410" y="165" key="#Notifications" timestamp="1638011906721">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1637782613413" />
+    <state x="410" y="165" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1638011906721" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1638011918800">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1638011918800" />
     <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1637782625496">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
