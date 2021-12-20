@@ -10,15 +10,13 @@
 // * * * * * *
 
 //first Loop
-let s = 6;
+
 let string = "";
-for(let i = 0; i < s; i++){
+for(let i = 0; i < 6; i++){
     {
-        string += "* ";
+        string += "*";
+    console.log(string);
     }
-    string += "<br>";
-} 
-document.write(string);
 
 
 //Second Loop

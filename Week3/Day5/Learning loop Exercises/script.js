@@ -82,27 +82,11 @@
 // Hint : Check the data type you receive from the prompt (ie. Use the typeof method
 
 // let i = prompt(" Please enter a number: ");
-// let num = parseInt(i);
-// while(num <10){
-//     prompt("give me another number! ");
-//     i++;
-//     if(num > 10){
-//         console.log("you have approved this Test")
-//     }
-//     break;
-// }
-
-
-
-// while(isNaN(num) !== true && num < 10 ){
-//     prompt("give me another number! ");
-//     i++;
-//     console.log("this is your number: " + num);
-    
-//     if(num > 10){
-//         console.log("You must enter a number");
-//     }
-// } 
+// do{ numb = prompt("give me another number! ");
+//  }
+// while(num <10)
+// console/log(numb)    
+//     
 
 //-------------------------------------------------------------------------------------------------
 
