@@ -81,12 +81,11 @@
 // Tip : Which while loop is more relevant for this situation?
 // Hint : Check the data type you receive from the prompt (ie. Use the typeof method
 
-// let i = prompt(" Please enter a number: ");
-// do{ numb = prompt("give me another number! ");
-//  }
-// while(num <10)
-// console/log(numb)    
-//     
+let num;
+do{ num = parseInt(prompt("give me a number! "));
+ }
+while(num <10);  
+    
 
 //-------------------------------------------------------------------------------------------------
 
