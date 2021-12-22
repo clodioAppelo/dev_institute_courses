@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Home Page - Microblog</title>
+    </head>
+    <body>
+        {% if name == "Bob" %}
+            <p> Hello Bob </p>
+        {% else %}
+            <p> Who are you ? </p>
+        {% endif %}
+
+
+        <h1>this is the list of the users</h1>
+
+        <ul>
+            {% for user in users %}
+                <li><p> Hello {{ user }}! </p></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

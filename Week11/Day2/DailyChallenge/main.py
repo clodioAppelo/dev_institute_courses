@@ -1,7 +1,7 @@
 # Instructions:
 # Build a lesson page for the di-learning platform !
 #
-# Create a directory called templates.
+# Create a directory called lesson1.
 #
 # Inside the directory there should be 2 markdown files (.md) : in-this-chapter.md and exercises.md
 # Check out the hint below for more information on markdown file.
@@ -17,7 +17,7 @@
 
 import flask
 
-app = flask.Flask(__name__)
+app = flask.Flask(__name__, template_folder='lesson1')
 
 
 @app.route("/")

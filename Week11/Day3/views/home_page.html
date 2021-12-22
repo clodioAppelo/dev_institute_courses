@@ -1,0 +1,12 @@
+{% extends "general_view.html" %}
+
+{% block title %}Hello world!{% endblock %}
+
+
+{% block body %}
+    {{ super() }}
+    <h2>user name is: {{ template_username }}</h2>
+    <h2>user age is: {{ user_age }}</h2>
+
+    <h2>This heading is defined in the child index page.</h2>
+{% endblock %}
