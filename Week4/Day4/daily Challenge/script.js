@@ -10,58 +10,62 @@
 
 // ==============================
 
-// 99 bottles of beer on the wall
-// 99 bottles of beer
-// Take 1 down, pass it around
-// 98 bottles of beer on the wall
-// 98 bottles of beer on the wall
-// 98 bottles of beer
-// Take 2 down, pass them around
-// 96 bottles of beer on the wall
-// 96 bottles of beer on the wall
-// 96 bottles of beer
-// Take 3 down, pass them around
-// 93 bottles of beer on the wall
-let passIt = ""
-let word = "bottles";
-let count = parseInt(prompt(" Please enter the number of beers on the wall to start our song: "))
-let countPass = 0
-while (count > 0) { 
-  if (count == 1);{ 
-    word = "bottle"
+
+// let word = "bottles";
+// let count = parseInt(prompt(" Please enter the number of beers on the wall to start our song: "))
+
+
+// let countPass = 0
+// while (count > 0) { 
+//   if (count == 1);{ 
+//     word = "bottle"
     
          
-  }
-    console.log(count + " " + word + " of beer on the wall");
-    console.log(count + " " + word + " of beer,");
+//   }
+//     console.log(count + " " + word + " of beer on the wall");
+//     console.log(count + " " + word + " of beer,");
     
     
-    count = count - 1;
-    countPass ++
+//     count = count - 1;
+//     countPass ++
     
     
-    if (count > 0) { 
-      if (count == 1){
-         word = "bottle"
+//     if (count > 0) { 
+//       if (count == 1){
+//          word = "bottle"
          
          
-         console.log("Take "+ countPass+ " down," + passIt + " around,")
-        console.log(count + " " + word + " of beer on the wall.");
+//          console.log("Take "+ countPass+ " down," + passIt + " around,")
+//         console.log(count + " " + word + " of beer on the wall.");
          
-        } else {
-        passIt = " pass them"
-        console.log("Take "+ countPass+ " down," + passIt + " around,")
-        console.log(count + " " + word + " of beer on the wall.");
+//         } else {
+//         passIt = " pass them"
+//         console.log("Take "+ countPass+ " down," + passIt + " around,")
+//         console.log(count + " " + word + " of beer on the wall.");
     
-        }
+//         }
         
-    } else {
-      if (count < 1){
-         word = "bottles"
+//     } else {
+//       if (count < 1){
+//          word = "bottles"
        
-      }
-        console.log("Take "+ countPass+ " down, "+ passIt+ " around,")
-        console.log("No more " + word + " of beer on the wall.");
+//       }
+//         console.log("Take "+ countPass+ " down, "+ passIt+ " around,")
+//         console.log("No more " + word + " of beer on the wall.");
         
-    }
-}
+//     }
+// }
+
+let startBottles = prompt("Choose a number to begin counting down the bottles");
+let count = 1;
+
+console.log(startBottles + " bottles of beer on the wall\n"+startBottles+" bottles of beer\n" + "Take " +count+" down, pass it around");
+startBottles = +startBottles - count;
+count++;
+
+do {
+    console.log(startBottles + " bottles of beer on the wall\n"+startBottles+" bottles of beer\n" + "Take " +count+" down, pass them around");
+    startBottles = +startBottles - count;
+    count++;
+
+} while (startBottles >0);
